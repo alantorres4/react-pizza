@@ -1,14 +1,17 @@
 import '../App.css';
 import Footer from '../Footer';
-import Sidebar from '../Sidebar';
+import Sidebar from './Sidebar';
+import CallNowButton from './CallNowButton';
 import enhanced_logo from '../style/enhanced-that-little-pizza-place-logo.png';
 import { Link } from "react-router-dom";
 
 function Pizza() {
   return (
     <div>
+      <div className="checkeredBanner"> .</div>
       <Sidebar page="Pizza"/>
       <div className="content">
+        <CallNowButton />
         <div style={{width: '100%', textAlign: 'center'}}>
           <br /><br />
           <Link to="/">
@@ -30,11 +33,11 @@ function Pizza() {
         <table>
           <tr>
             <td>Additional Toppings</td>
-            <td><span class="bold-prices">$0.50</span></td>
+            <td><span className="bold-prices">$0.50</span></td>
           </tr>
           <tr>
             <td>Extra Cheese</td>
-            <td><span class="bold-prices">$1.00</span></td>
+            <td><span className="bold-prices">$1.00</span></td>
           </tr>
         </table>
         <p><i>Not available with discount offers.</i></p>
@@ -42,9 +45,9 @@ function Pizza() {
 
 
 
-        <div class="row">
-          <div class="column">
-            <h2 class="pizza-headers">All Meat</h2>
+        <div className="row">
+          <div className="column">
+            <h2 className="pizza-headers">All Meat</h2>
             <p>Pepperoni, Canadian bacon, Sausage, cheddar, and mozzarella cheese.</p>
             <table>
               <tr>
@@ -62,7 +65,7 @@ function Pizza() {
             </table>
             <br/><br/>
 
-            <h2 class="pizza-headers">Barbecue Pizza</h2>
+            <h2 className="pizza-headers">Barbecue Pizza</h2>
             <p>Flavorful pork barbacue and sauce served on a thick crust topped with mozzarella.</p>
             <table>
               <tr>
@@ -80,7 +83,7 @@ function Pizza() {
             </table>
             <br/><br/>
 
-            <h2 class="pizza-headers">Taco Pizza</h2>
+            <h2 className="pizza-headers">Taco Pizza</h2>
             <p>Our flavorful taco meat covered with mozzarella, baked on a crispy, thin crust. Topped with cheddar, tomato, and lettuce.</p>
             <table>
               <tr>
@@ -98,7 +101,7 @@ function Pizza() {
             </table>
             <br/><br/>
 
-            <h2 class="pizza-headers">Chicken Bacon Ranch</h2>
+            <h2 className="pizza-headers">Chicken Bacon Ranch</h2>
             <p>Ranch over a pizza topped with mozzarella with chicken, bacon, red onions, and diced tomatoes.</p>
             <table>
               <tr>
@@ -116,7 +119,7 @@ function Pizza() {
             </table>
             <br/><br/>
 
-            <h2 class="pizza-headers">Veggie Pizza</h2>
+            <h2 className="pizza-headers">Veggie Pizza</h2>
             <p>A tasty combination of mushrooms, diced tomato, green olives, black olives, sautéed bell peppers, and sautéed onion.</p>
             <table>
               <tr>
@@ -136,8 +139,8 @@ function Pizza() {
 
           </div>
 
-          <div class="column">
-            <h2 class="pizza-headers">Combo</h2>
+          <div className="column">
+            <h2 className="pizza-headers">Combo</h2>
             <p>Pepperoni, sausage, black olives, mushrooms, onions, and bell pepper.</p>
             <table>
               <tr>
@@ -155,7 +158,7 @@ function Pizza() {
             </table>
             <br/><br/>
 
-            <h2 class="pizza-headers">Meatballs and Cheese</h2>
+            <h2 className="pizza-headers">Meatballs and Cheese</h2>
             <p>Hearty flavor of meatballs on tomato sauce, covered with mozzarella and cheddar cheese.</p>
             <table>
               <tr>
@@ -173,7 +176,7 @@ function Pizza() {
             </table>
             <br/><br/>
 
-            <h2 class="pizza-headers">Pepperoni Express</h2>
+            <h2 className="pizza-headers">Pepperoni Express</h2>
             <p>Double pepperoni with a layer of extra cheese in-between.</p>
             <table>
               <tr>
@@ -191,7 +194,7 @@ function Pizza() {
             </table>
             <br/><br/>
 
-            <h2 class="pizza-headers">Bacon Cheeseburger</h2>
+            <h2 className="pizza-headers">Bacon Cheeseburger</h2>
             <p>A thick crust covered with 1000 Island dressing with mozzarella, beef, and bacon baked on. Garnished with lettuce, cheddar, tomato, onion, and pickle.</p>
             <table>
               <tr>
@@ -209,7 +212,7 @@ function Pizza() {
             </table>
             <br/><br/>
 
-            <h2 class="pizza-headers">Deluxe Veggie</h2>
+            <h2 className="pizza-headers">Deluxe Veggie</h2>
             <p>Your choice of crust covered with garlic sauce, spinach, and mozzarella. Then topped with mushrooms, black olives, tomato, green olives, sautéed bell peppers, sautéed onions, and artichoke hearts.</p>
             <table>
               <tr>
@@ -234,7 +237,7 @@ function Pizza() {
 
 
 
-
+        <h1 style={{width: '100%', textAlign: 'center'}}>Want to create your own pizza?</h1>
         <div className="row">
           <div className="column">
             <h2 className="pizza-headers">1) Choose your favorite crust</h2>
